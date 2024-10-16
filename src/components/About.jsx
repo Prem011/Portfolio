@@ -11,7 +11,7 @@ const ServiceCard = ({ index, title, icon }) => {
   return (
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-[15.4vw] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      className="w-[25.4vw] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
     >
       <Tilt
         options={{
@@ -30,25 +30,25 @@ const ServiceCard = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <>
-      <motion.div>
+    <div className='max-w-full h-full '>
+      <motion.div >
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-full leading-[30px]"
+        className="mt-4 text-secondary text-[17px] max-w-full  leading-[30px]"
       >
         Dynamic and versatile Full Stack MERN Developer skilled in both frontend and backend development. With hands-on experience building scalable web applications, RESTful APIs, and real-time features using technologies like Node.js, React, Express, MongoDB, and Socket.io, I have a strong foundation in UI/UX design and software development. Known for creating clean, efficient, and maintainable code, I excel in integrating API services, ensuring responsive design, and deploying secure systems. Proficient in handling authentication (Passport.js), state management (Redux, Zustand), and payment gateway integrations. Eager to bring innovative, detail-oriented solutions to the tech industry.
       </motion.p>
 
-      <div className="mt-20 flex mx-auto w-full flex-wrap gap-10">
+      <div className="mt-20 flex w-full justify-center items-center flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

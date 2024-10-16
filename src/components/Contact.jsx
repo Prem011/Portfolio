@@ -5,6 +5,7 @@
   import { EarthCanvas } from './canvas';
   import { SectionWrapper } from '../hoc';
   import { slideIn } from '../utils/motion';
+  import Connect from './Connect';
 
   const Contact = () => {
     const formRef = useRef();
@@ -57,7 +58,8 @@
     
 
     return (
-      <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
+      <div className=' w-full h-full xl:mt-12 mx-auto' >
+          <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
         <motion.div 
           variants={slideIn('left', "tween", 0.2, 1)}
           className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
@@ -68,10 +70,10 @@
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className='mt-12 flex flex-col gap-8'
+            className=' flex flex-col gap-8 mt-3'
           >
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Your Name</span>
+              <span className='text-white font-medium mb-3'>Your Name</span>
               <input
                 type="text"
                 name='name'
@@ -83,7 +85,7 @@
             </label>
 
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Your Email</span>
+              <span className='text-white font-medium mb-3'>Your Email</span>
               <input
                 type="email"
                 name='email'
@@ -95,7 +97,7 @@
             </label>
 
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Your Message</span>
+              <span className='text-white font-medium mb-3'>Your Message</span>
               <textarea
                 rows="7"
                 name='message'
@@ -113,17 +115,23 @@
               {loading ? 'Sending...' : 'Send'}
             </button>
           </form>
+
+
         </motion.div>
 
         <motion.div 
           variants={slideIn('right', "tween", 0.2, 1)}
           className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-        >
+          >
           <EarthCanvas/>
+          {/* <Connect/> */}
         </motion.div>
 
-        {/* You can add the EarthCanvas here if needed */}
-        {/* <EarthCanvas /> */}
+          </div>
+
+          <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden' >
+            <Connect/>
+          </div>
 
       </div>
     );

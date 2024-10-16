@@ -29,9 +29,26 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import linkedIn from "./linkedIn.png";
+import phone from "./phone.png";
+import mail from "./mail.png";
+import alabay from "./alabay.png";
+import socialMedia from "./socialMedia.png";
+import ems from "./ems.png";
+import spaceBrain from "./spaceBrain.png";
+import chatApk from "./chatApk.png";
+// import github from "./github.png";
 
 export {
+  ems,
+  socialMedia,
+  spaceBrain,
+  alabay,
+  chatApk,
   logo,
+  mail,
+  phone,
+  linkedIn,
   backend,
   creator,
   mobile,

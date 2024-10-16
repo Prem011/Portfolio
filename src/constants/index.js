@@ -23,6 +23,11 @@ import {
     jobit,
     tripguide,
     threejs,
+    github,
+    phone, 
+    linkedIn,
+    mail,
+    ems, socialMedia, alabay, spaceBrain, chatApk
   } from "../assets";
   
   export const navLinks = [
@@ -42,19 +47,19 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "MERN Developer",
       icon: web,
     },
+    // {
+    //     // title: "React Native Developer",
+    //     // icon: mobile,
+    // },
     {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
+      title: "NodeJs Developer",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "React Developer",
       icon: creator,
     },
   ];
@@ -128,45 +133,6 @@ import {
         "Participating in code reviews and providing constructive feedback to other developers.",
       ],
     },
-    {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
-      iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
-      iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
   ];
   
   const testimonials = [
@@ -198,68 +164,154 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "EMS Portal",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Web-based Employee-management platform that allows employer to manage their employees data, including employees payroll and employees attendence management.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "nodejs",
           color: "green-text-gradient",
         },
         {
           name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "mongodb",
+          color: "violet-text-gradient",
+        },
+        {
+          name: "razorpay",
+          color: "orange-text-gradient",
+        },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: ems,
+      source_code_link: "https://github.com/Prem011/EMS_portall",
     },
     {
-      name: "Job IT",
+      name: "Chat App",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables users to chat with the users present on the web app.",
       tags: [
         {
           name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "restapi",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "restapi",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "red-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "violet-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "pink-text-gradient",
+        }
+      ],
+      image: chatApk,
+      source_code_link: "https://github.com/Prem011/Mern-Chat-Apk",
+    },
+    {
+      name: "Connect Now",
+      description:
+        "A web based social media that enables users to post the post and able to like and comment on the other's post.",
+      tags: [
+        {
+          name: "EJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
           color: "pink-text-gradient",
         },
+        {
+          name: "nodejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "violet-text-gradient",
+        }
       ],
-      image: jobit,
+      image: socialMedia,
       source_code_link: "https://github.com/",
     },
     {
-      name: "Trip Guide",
+      name: "Alabay World",
+      description:
+        "A comprehensive webiste to get the informations of the Alabay species of Dog .",
+      tags: [
+        {
+          name: "React",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Tailwind",
+          color: "green-text-gradient",
+        },
+        // {
+        //   name: "GSAP",
+        //   color: "pink-text-gradient",
+        // },
+      ],
+      image: alabay,
+      source_code_link: "https://github.com/Prem011/Reactp01",
+    },
+    {
+      name: "Brain-space",
       description:
         "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
       tags: [
         {
-          name: "nextjs",
+          name: "Html",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "CSS",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "GSAP",
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/",
+      image: spaceBrain,
+      source_code_link: "https://github.com/Prem011/Brain-space-final-ui-project-",
+    },
+  ];
+
+  
+  const connectLinks = [
+    {
+      icon: linkedIn,
+      link: "https://www.linkedin.com/in/premchandra-wanjari-122288225/",
+      target: "_blank",
+    },
+    {
+      icon: github,
+      link: "https://github.com/Prem011?tab=repositories",
+      target: "_blank",
+    },
+    {
+      icon: mail,
+      link: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMScdGbkngzKnzfNWwfsFpVsqJVgjdvhncpKDmZwMjpmDBJMJcQjDvFRfkrZwwnJzpHFXnH",
+      target: "_blank", // Not opening a new tab
+    },
+    {
+      icon: phone,
+      link: "tel:830-514-2069",
+      target: "_blank", // Not opening a new tab
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, testimonials, projects, connectLinks };
