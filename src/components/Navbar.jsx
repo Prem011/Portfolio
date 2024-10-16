@@ -15,7 +15,7 @@ const Navbar = () => {
           setActive("");
           window.scrollTo(0, 0);
         }}>
-          <img src='./logo.png' className='w-9 h-9 object-contain' alt="logo" />
+          <a href=""><img src='./logo.png' className='w-9 h-9 object-contain' alt="logo" /></a>
           <p className='text-white text-[18px] font-bold cursor-pointer flex'>Premchandra  &nbsp;<span className='sm:block hidden' >
           Wanjari</span> </p>
         </Link>

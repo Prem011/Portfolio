@@ -31,11 +31,14 @@ import { technologies } from "../constants";
 const Tech = () => {
   return (
     <div className='flex flex-row flex-wrap justify-center gap-10'>
+     <div className="w-[70%] flex gap-10 flex-wrap justify-center">
       {technologies.map((technology) => (
         <div className='w-28 h-28' key={technology.name}>
           <BallCanvas icon={technology.icon} />
+          {/* prem */}
         </div>
       ))}
+     </div>
     </div>
   );
 };
