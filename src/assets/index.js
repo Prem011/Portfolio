@@ -37,9 +37,11 @@ import socialMedia from "./socialMedia.png";
 import ems from "./ems.png";
 import spaceBrain from "./spaceBrain.png";
 import chatApk from "./chatApk.png";
+import resume from "./resume.png";
 // import github from "./github.png";
 
 export {
+  resume,
   ems,
   socialMedia,
   spaceBrain,

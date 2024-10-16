@@ -27,7 +27,7 @@ import {
     phone, 
     linkedIn,
     mail,
-    ems, socialMedia, alabay, spaceBrain, chatApk
+    ems, socialMedia, alabay, spaceBrain, chatApk, resume
   } from "../assets";
   
   export const navLinks = [
@@ -303,15 +303,22 @@ import {
       target: "_blank",
     },
     {
-      icon: mail,
-      link: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMScdGbkngzKnzfNWwfsFpVsqJVgjdvhncpKDmZwMjpmDBJMJcQjDvFRfkrZwwnJzpHFXnH",
-      target: "_blank", // Not opening a new tab
-    },
-    {
       icon: phone,
       link: "tel:830-514-2069",
-      target: "_blank", // Not opening a new tab
+      target: "_blank",
+    },
+    {
+      icon: mail,
+      link: "https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSMScdGbkngzKnzfNWwfsFpVsqJVgjdvhncpKDmZwMjpmDBJMJcQjDvFRfkrZwwnJzpHFXnH",
+      target: "_blank",
+    },
+    {
+      icon: resume,
+      link: "./PremchandraWanjari62Resume.pdf", // Path to your resume file
+      download: "Premchandra_Wanjari_Resume.pdf", // Suggested name for the file when downloaded
+      target: "_blank", 
     },
   ];
+  
   
   export { services, technologies, experiences, testimonials, projects, connectLinks };
