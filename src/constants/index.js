@@ -27,7 +27,7 @@ import {
     phone, 
     linkedIn,
     mail,
-    ems, socialMedia, alabay, spaceBrain, chatApk, resume
+    ems, socialMedia, alabay, spaceBrain, chatApk, resume, certificate
   } from "../assets";
   
   export const navLinks = [
@@ -316,6 +316,12 @@ import {
       icon: resume,
       link: "./PremchandraWanjari62Resume.pdf", // Path to your resume file
       download: "Premchandra_Wanjari_Resume.pdf", // Suggested name for the file when downloaded
+      target: "_blank", 
+    },
+    {
+      icon: certificate,
+      link: "./Premchandrawanjari.pdf", // Path to your resume file
+      download: "Premchandrawanjari.pdf", // Suggested name for the file when downloaded
       target: "_blank", 
     },
   ];
