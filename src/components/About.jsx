@@ -11,22 +11,34 @@ const ServiceCard = ({ index, title, icon }) => {
   return (
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-[25.4vw] green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      
+      className="w-[28.9vw]  green-pink-gradient p-[1px] rounded-[20px] shadow-card" // Width for normal screens
     >
+      {/* Use this for mobile screens */}
       <Tilt
         options={{
           max: 45,
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+        className="bg-tertiary rounded-[20px] py-5 px-[2vw]  min-h-[280px] flex justify-evenly items-center flex-col sm:py-5 sm:px-2vw" // Maintain for larger screens
       >
-        <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-        <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+        {/* Mobile screen specific styles */}
+        <div className=" sm:hidden flex flex-col items-center "> 
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <h3 className="text-white p-[3vw] text-[20px] font-bold text-center">{title}</h3>
+        </div>
+
+        {/* For larger screens */}
+        <div className="hidden sm:flex flex-col items-center"> 
+          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <h3 className="text-white text-[20px] font-bold text-center">{title}</h3>
+        </div>
       </Tilt>
     </motion.div>
   );
 };
+
 
 const About = () => {
   return (
@@ -53,3 +65,6 @@ const About = () => {
 };
 
 export default SectionWrapper(About, "about");
+
+
+
