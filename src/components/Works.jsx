@@ -8,16 +8,16 @@ import { projects } from '../constants';
 import { fadeIn } from "../utils/motion";
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
-  return(
+  return (
     <motion.div 
       variants={window.innerWidth >= 640 ? fadeIn("up", "spring", index * 0.5, 0.75) : {}} // disable fade-in on mobile
     >
       {window.innerWidth >= 640 ? ( // disable tilt on mobile
         <Tilt 
           options={{
-            max:45,
+            max: 45,
             scale: 1,
-            speed : 450
+            speed: 450
           }}
           className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full" 
         >
@@ -45,7 +45,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
           <div className='mt-4 flex flex-wrap gap-2'>
             {tags.map((tag) => (
-              <p key={`tag.name`} className={`text-[14px] ${tag.color} `}>
+              <p key={tag.name} className={`text-[14px] ${tag.color} `}>
                 #{tag.name}
               </p>
             ))}
@@ -77,7 +77,7 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 
           <div className='mt-4 flex flex-wrap gap-2'>
             {tags.map((tag) => (
-              <p key={`tag.name`} className={`text-[14px] ${tag.color} `}>
+              <p key={tag.name} className={`text-[14px] ${tag.color} `}>
                 #{tag.name}
               </p>
             ))}
@@ -85,8 +85,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
         </div>
       )}
     </motion.div>
-  )
-}
+  );
+};
 
 const Works = () => {
   return (
@@ -99,6 +99,8 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
+          initial="initial"
+          animate="animate"
           className='mt-3 text-secondary text-[17px] max-w-full leading-[30px]'
         >
           Following projects showcase my skills and experience through
@@ -108,10 +110,7 @@ const Works = () => {
 
       <div className='w-full flex flex-wrap gap-7 mt-10'>
         {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`}
-            {...project}
-            index={index}
-          />
+          <ProjectCard key={`project-${index}`} {...project} index={index} />
         ))}
       </div>
     </>
