@@ -20,23 +20,12 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Canvas for non-mobile devices */}
-      <div className='w-full h-full mb-[4vw]' >
-      <div className="hidden sm:block w-full h-[1100px]">
+      {/* Canvas for both mobile and non-mobile devices */}
+      <div className='w-full h-full '>
         <ComputersCanvas />
       </div>
-      </div>
 
-
-      {/* Show image on mobile devices */}
-      <div className="sm:hidden absolute inset-0 top-[300px] mx-auto flex justify-center items-center ">
-        <img src="./desktop.png" alt="Desktop Preview" className="w-full h-[90vw]  object-cover" />
-      </div>
-
-
-
-
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div
