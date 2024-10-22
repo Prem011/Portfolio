@@ -1,11 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import { ComputersCanvas } from './canvas';
+import { ComputersCanvas } from './canvas'; // Ensure this is optimized for mobile if used
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto flex flex-col justify-center items-center">
+      {/* Container for the header */}
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center mt-5">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
@@ -13,15 +14,17 @@ const Hero = () => {
         </div>
 
         <div>
-          <h1 className={`${styles.heroHeadText}`}>Hi, I'm <span className="text-[#915eff]">Prem</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
+          <h1 className={`${styles.heroHeadText} text-center text-2xl sm:text-4xl`}> {/* Responsive heading */}
+            Hi, I'm <span className="text-[#915eff]">Prem</span>
+          </h1>
+          <p className={`${styles.heroSubText} mt-2 text-white-100 text-center text-sm sm:text-lg`}>
             I develop full stack web applications using MERN.
           </p>
         </div>
       </div>
 
       {/* Canvas for both mobile and non-mobile devices */}
-      <div className='w-full h-full '>
+      <div className='w-full h-full flex justify-center items-center'>
         <ComputersCanvas />
       </div>
 
