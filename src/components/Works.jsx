@@ -3,11 +3,12 @@ import { Tilt } from 'react-tilt';
 import { motion } from 'framer-motion';
 import { styles } from "../styles";
 import { github } from '../assets';
+import { website } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn } from "../utils/motion";
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_site_url }) => {
   return (
     <motion.div 
       variants={window.innerWidth >= 640 ? fadeIn("up", "spring", index * 0.5, 0.75) : {}} // disable fade-in on mobile
@@ -35,6 +36,16 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
                   className='w-1/2 h-1/2 object-contain' 
                 />
               </div>
+              
+              {live_site_url && (
+                <div 
+                  onClick={() => window.open(live_site_url, "_blank")}
+                  className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                >
+                  <img src={website} alt="live site" className='w-1/2 h-1/2 object-contain' />
+                </div>
+              )}
+
             </div>
           </div>
 

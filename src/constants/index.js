@@ -27,7 +27,7 @@ import {
     phone, 
     linkedIn,
     mail,
-    ems, socialMedia, alabay, spaceBrain, chatApk, resume, certificate
+    ems, socialMedia, alabay, spaceBrain, chatApk, resume, certificate, weThinkElastic, pinterest
   } from "../assets";
   
   export const navLinks = [
@@ -191,6 +191,7 @@ import {
       ],
       image: ems,
       source_code_link: "https://github.com/Prem011/EMS_portall",
+      live_site_url: "https://ems-portall.onrender.com",
     },
     {
       name: "Chat App",
@@ -219,7 +220,8 @@ import {
         }
       ],
       image: chatApk,
-      source_code_link: "https://github.com/Prem011/Mern-Chat-Apk",
+      source_code_link: "https://github.com/Prem011/Chat-Apk",
+      live_site_url: "https://chat-apk-1.onrender.com",
     },
     {
       name: "Connect Now",
@@ -244,7 +246,36 @@ import {
         }
       ],
       image: socialMedia,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/Prem011/auth",
+    },
+    {
+      name: "share-pic ",
+      description:
+        "A web based social media that enables users to post the post and able to like and comment on the other's post.",
+      tags: [
+        {
+          name: "EJS",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "tailwind",
+          color: "pink-text-gradient",
+        },
+        {
+          name: "nodejs",
+          color: "green-text-gradient",
+        },
+        {
+          name: "mongodb",
+          color: "violet-text-gradient",
+        },
+        {
+          name: "passport",
+          color: "indigi-text-gradient",
+        }
+      ],
+      image: pinterest,
+      source_code_link: "https://github.com/Prem011/Pinterest-clone",
     },
     {
       name: "Alabay World",
@@ -266,11 +297,12 @@ import {
       ],
       image: alabay,
       source_code_link: "https://github.com/Prem011/Reactp01",
+      live_site_url: "https://reactp01.vercel.app/",
     },
     {
       name: "Brain-space",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "Brain.space develops EEG-based technology and AI tools for brain data collection and analysis, enabling personalized insights for human and space applications.",
       tags: [
         {
           name: "Html",
@@ -287,6 +319,29 @@ import {
       ],
       image: spaceBrain,
       source_code_link: "https://github.com/Prem011/Brain-space-final-ui-project-",
+      live_site_url: "https://brain-space-final-ui-project.vercel.app/",
+    },
+    {
+      name: "We-Think-Elastic",
+      description:
+        "We Think Elastic is a creative agency focused on branding, digital strategy, and impactful storytelling. They specialize in developing brand identities, digital experiences, and content strategies to help brands grow and connect with audiences.",
+      tags: [
+        {
+          name: "Html",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+        {
+          name: "GSAP-js",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: weThinkElastic,
+      source_code_link: "https://github.com/Prem011/Brain-space-final-ui-project-",
+      live_site_url: "https://we-think-elastic-orpin.vercel.app/",
     },
   ];
 

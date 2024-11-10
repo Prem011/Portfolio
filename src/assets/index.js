@@ -6,6 +6,7 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import website from "./website.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -36,12 +37,17 @@ import alabay from "./alabay.png";
 import socialMedia from "./socialMedia.png";
 import ems from "./ems.png";
 import spaceBrain from "./spaceBrain.png";
+import weThinkElastic from "./weThinkElastic.png";
 import chatApk from "./chatApk.png";
 import resume from "./resume.png";
 import certificate from "./certificate.png";
+import pinterest from "./pinterest.png";
 // import github from "./github.png";
 
 export {
+  pinterest,
+  weThinkElastic,
+  website,
   certificate,
   resume,
   ems,
